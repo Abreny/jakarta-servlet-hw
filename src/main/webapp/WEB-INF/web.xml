@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+    <display-name>My Web Application</display-name>
+    <description>My Web Application Project</description>
+    <context-param>
+        <param-name>webadmin</param-name>
+        <param-value>contact@abned.pro</param-value>
+        <description>
+            The EMAIL address of the administrator to whom questions
+            and comments about this application should be addressed.
+        </description>
+    </context-param>
+
+    <servlet>
+        <servlet-name>hello-world</servlet-name>
+        <description>Show "Hello world!" on container.</description>
+        <servlet-class>pro.abned.tuto.servlet.HelloWorldController</servlet-class>
+        <!-- Load this servlet at server startup time -->
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>hello-world</servlet-name>
+        <url-pattern>/hello-world</url-pattern>
+    </servlet-mapping>
+</web-app>
