@@ -15,7 +15,6 @@
         <servlet-name>hello-world</servlet-name>
         <description>Show "Hello world!" on container.</description>
         <servlet-class>pro.abned.tuto.servlet.HelloWorldController</servlet-class>
-        <!-- Load this servlet at server startup time -->
         <load-on-startup>1</load-on-startup>
     </servlet>
     <servlet-mapping>
